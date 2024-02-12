@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    -moz-box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+.topo{
+    background-color: #ffef00;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.descritivo{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.conteudo{
+    display: flex;
+}
+
+.conteudo>h6>a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 60px;
+}
+
+.conteudo>h6>a>i{
+    margin-left: 10px;
+}
+
+header>.container>.d-flex>a>img{
+    width: 70px;
+}
+
+header{
+    background-image: url(../Imagens/fundoQuadrinho.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search>i{
+    color: black;
+    position: relative;
+    right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.sliderPesquisa{
+    display: flex;
+}
+
+.sliderPesquisa>.card{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../Imagens/fundoBody.avif);
+    background-size: 335%;
+}
+
+.sliderPesquisa > .card > .like{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.sliderPesquisa > .card > .like:hover{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.sliderPesquisa > .card > img.product{
+    width: 100%;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.sliderPesquisa > .card > .title{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+
+.sliderPesquisa > .card > .rating{
+    color: #ffc002;
+}
+
+.sliderPesquisa > .card > .price{
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #ffff00;
+}
+
+.sliderPesquisa > .card > a.button{
+    border: 1px solid #ffc002;
+    border-radius: 30px;
+    color:  #ffc002;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.sliderPesquisa > .card > a.button:hover{
+    background-color: #ffc002;
+    color: white;
+}
+
+.box-slider{
+    width: 1010px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 100px auto;
+    background-color: #ffc002;
+}
+
+.box-slider::-webkit-scrollbar{
+    display: none;
+}
+
+.card>h4{
+    color: #ffffff;
+}
+
+#resultadoPesquisa{
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+    
+}
+
+#resultadoPesquisa>p{
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+p{
+    text-align: center;
+    margin-top: 10px;
+    align-items: center; 
+}
+
+.direction{
+    text-align: center;
+}
+
+.direction> button{
+    font-weight: bold;
+    background-color: #ff0000;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin: 0 10px;
+    position: relative;
+    bottom: 80px;
+    transition: 0.3s ease;
+}
+
+.direction> button:hover{
+    background-color: #ffc002;
+}
+
+@media screen and (max-width: 1024px){
+    .card{
+        width: calc(33.3vw - 20px);
+    }
+}
+@media screen and (max-width: 768px){
+    .card{
+        width: calc(50vw - 20px);
+    }
+    
+}
+
+.local{
+    display: flex;
+    gap: 10px;
+    margin-left: 125px;
+    margin-top: 20px;
+}
+
+.left-container{
+    display: flex;
+}
+
+.containerMangas{
+    display: flex;
+    margin-left: 125px;
+}
+
+.slider1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.slider1>.card1{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../Imagens/fundoBody.avif);
+    background-size: 500%;
+}
+
+.slider1 > .card1 > .like1{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.slider1 > .card1 > .like1:hover{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.slider1 > .card1 > img.product1{
+    width: 100%;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.slider1 > .card1 > .title1{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+
+.slider > .card1 > .rating1{
+    color: #ffc002;
+}
+
+.slider1 > .card1 > .price1{
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #ffff00;
+}
+
+.slider1 > .card1 > a.button1{
+    border: 1px solid #ffc002;
+    border-radius: 30px;
+    color:  #ffc002;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.slider1 > .card1 > a.button1:hover{
+    background-color: #ffc002;
+    color: white;
+}
+
+.slider1 > .card1>h4{
+    color: white;
+}
+
+@media(max-width: 1024px){
+    .containerMangas{
+        margin-left: 25px;
+        display: block;
+    }
+
+    .containerMangas>h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider1{
+        display: block;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    
+    #formPesquisar{
+        width: 50%;
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,865 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    -moz-box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+/*começo dos pedidos e central de ajuda*/
+.topo{
+    background-color: #ffef00;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.descritivo{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+
+.conteudo{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.conteudo>h6>a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 60px;
+}
+
+.conteudo>h6>a>i{
+    margin-left: 10px;
+}
+/*fim do meus pedidos e central de ajuda*/
+/*começo da barra de navegação*/
+header>.container>.d-flex>a>img{
+    width: 70px;
+}
+
+header{
+    background-image: url(Imagens/fundoQuadrinho.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search>i{
+    color: black;
+    position: relative;
+    right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#menu{
+    margin-left: 15px;
+    margin-right: -80px;
+}
+/*começo do login do usuario*/
+.boasVindas{
+    color: yellow;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.boasVindas>a{
+    margin-left: 15px;
+    border: none;
+    border-radius: 8px;
+    color: red;
+    padding: 10px;
+    background-color: yellow;
+}
+/*fim do login do usuario*/
+/* Estilização do dropdown para aparecer com hover */
+.btn-group:hover .dropdown-menu {
+    display: block;
+    margin-top: 42px;
+    position: absolute;
+}
+
+.btn-group>button:hover{
+    color: #000000;
+}
+
+.dropdown-menu {
+    display: none;
+    opacity: 0.8;
+}
+
+.dropdown-menu .dropdown-item.active {
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 200px 200px 0px 200px;
+    -webkit-border-radius: 200px 200px 0px 200px;
+    -moz-border-radius: 200px 200px 0px 200px;
+    border: 1px dashed #ff6550;
+    background-color: #ff0000;
+    transition: background-color 1s ease 0s;
+    border: 1px dashed #ff6550;
+}
+
+.dropdown-menu .dropdown-item.active:hover{
+    color: black;
+    background-color: #ffff00;
+}
+
+.dropdown-menu .dropdown-divider {
+    border-top: 1px solid #000000;
+}
+
+.categorias{
+    background-color:rgb(247, 55, 55);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+
+.btn-group{
+    margin-left: 40px;
+}
+
+.provisorio>div{
+    margin-left: 130px;
+}
+
+.provisorio>div>ul>li{
+    margin-right: 20px;
+}
+
+.provisorio>div>ul>li>a{
+        border-radius: 200px 200px 0px 200px;
+        -webkit-border-radius: 200px 200px 0px 200px;
+        -moz-border-radius: 200px 200px 0px 200px;
+        border: 1px dashed #ff6550;
+        background-color: #ff0000;
+        transition: background-color 1s ease 0s;
+        border: 1px dashed #ff6550;
+}
+
+.provisorio>div>ul>li>a:hover{
+    color: black;
+    background-color: #ffff00;
+}
+
+.categorias>.fav{
+    margin-right: 225px;
+    margin-top: 2px;
+    align-items: center;
+}
+/*fim da barra de navegação*/
+/*começo da resposta da pesquisa*/
+.sliderPesquisa{
+    display: flex;
+}
+
+.sliderPesquisa>.card{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Imagens/fundoBody.avif);
+    background-size: 335%;
+}
+
+.sliderPesquisa > .card > .like{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.sliderPesquisa > .card > .like:hover{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.sliderPesquisa > .card > img.product{
+    width: 100%;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.sliderPesquisa > .card > .title{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+    height: 40px;
+}
+
+.sliderPesquisa > .card > .rating{
+    color: #ffc002;
+}
+
+.sliderPesquisa > .card > .price{
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #ffff00;
+}
+
+.sliderPesquisa > .card > a.button{
+    border: 1px solid #ffc002;
+    border-radius: 30px;
+    color:  #ffc002;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.sliderPesquisa > .card > a.button:hover{
+    background-color: #ffc002;
+    color: white;
+}
+
+#resultadoPesquisa{
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+}
+
+#resultadoPesquisa>p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.txtResult>p{
+    text-align: center;
+    margin-top: 10px;
+}
+/*fim da resposta da pesquisa*/
+/*começo da padronização da demonstração de produtos*/
+h2{
+    color: #000000;
+    font-weight: 300;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+h2::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #ff0000;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*fim da padronização da demonstração de produtos*/
+
+/*Slider de produtos 1 (temos varios, pois o script para navegar é por id e classes específicas ) */
+/*slider dos produtos*/
+.slider{
+    display: flex;
+}
+
+.slider>.card{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Imagens/fundoBody.avif);
+    background-size: 335%;
+}
+
+.slider > .card > .like{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.slider > .card > .like:hover{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.slider > .card > img.product{
+    width: 100%;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.slider > .card > .title{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+    height: 40px;
+}
+
+.slider > .card > .rating{
+    color: #ffc002;
+}
+
+.slider > .card > .price{
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #ffff00;
+}
+
+.slider > .card > a.button{
+    border: 1px solid #ffc002;
+    border-radius: 30px;
+    color:  #ffc002;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.slider > .card > a.button:hover{
+    background-color: #ffc002;
+    color: white;
+}
+
+.box-slider{
+    width: 1010px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 100px auto;
+    background-color: #ffc002;
+}
+
+.box-slider::-webkit-scrollbar{
+    display: none;
+}
+
+.card>h4{
+    color: #ffffff;
+    width: 300px;
+    text-align: center;
+}
+
+/*icone apenas no php de HQAdm*/
+.iconAdm{
+    display: flex;
+}
+
+.iconAdm>a>i{
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+.iconAdm>a>i:hover{
+    transition: 0.3s ease;
+    color: tomato;
+}
+/*fim icone apenas no php de HQAdm*/
+.direction{
+    text-align: center;
+}
+
+.direction> button{
+    font-weight: bold;
+    background-color: #ff0000;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin: 0 10px;
+    position: relative;
+    bottom: 80px;
+    transition: 0.3s ease;
+}
+
+.direction> button:hover{
+    background-color: #ffc002;
+}
+
+@media screen and (max-width: 1024px){
+    .card{
+        width: calc(33.3vw - 20px);
+    }
+}
+@media screen and (max-width: 768px){
+    .card{
+        width: calc(50vw - 20px);
+    }
+    
+}
+/*fim Slider de produtos 1 (temos varios, pois o script para navegar é por id e classes específicas ) */
+/*divisor estético*/
+.descritivo1{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+}
+
+.descritivo1>p{
+    text-align: center;
+    margin-top: 10px;
+}
+/*fim divisor estético*/
+/*imagens para redirecionamento para Produtos.php*/
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.container{
+    max-width: 920px;
+}
+
+.folders{
+    display: grid; 
+    gap: 10px;
+    justify-items: start;
+    justify-content: space-evenly;
+    align-content: center;
+    height: auto;
+}
+
+.anime1{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.anime2{
+    grid-column: 4 / span 4;
+    grid-row: 1;
+}
+
+.batman3{
+    grid-column: 4 / span 4;
+    grid-row: 2;
+}
+/*fim divisor estético*/
+/*Slider de produtos 2 (temos varios, pois o script para navegar é por id e classes específicas ) */
+.slider2{
+    display: flex;
+}
+
+.slider2>.card{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Imagens/fundoBody.avif);
+    background-size: 335%;
+}
+
+.slider2 > .card > .like{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.slider2 > .card > .like:hover{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.slider2 > .card > img.product{
+    width: 100%;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.slider2 > .card > .title{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+    height: 40px;
+}
+
+.slider2 > .card > .rating{
+    color: #ffc002;
+}
+
+.slider2 > .card > .price{
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #ffff00;
+}
+
+.slider2 > .card > a.button{
+    border: 1px solid #ffc002;
+    border-radius: 30px;
+    color:  #ffc002;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.slider2 > .card > a.button:hover{
+    background-color: #ffc002;
+    color: white;
+}
+/*fim Slider de produtos 2 (temos varios, pois o script para navegar é por id e classes específicas ) */
+/*Slider de produtos 3 (temos varios, pois o script para navegar é por id e classes específicas ) */
+/*One Piece */
+.slider3{
+    display: flex;
+}
+
+.slider3>.card{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Imagens/fundoBody.avif);
+    background-size: 335%;
+}
+
+.slider3 > .card > .like{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.slider3 > .card > .like:hover{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.slider3 > .card > img.product{
+    width: 100%;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.slider3 > .card > .title{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+    height: 40px;
+}
+
+.slider3 > .card > .rating{
+    color: #ffc002;
+}
+
+.slider3 > .card > .price{
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #ffff00;
+}
+
+.slider3 > .card > a.button{
+    border: 1px solid #ffc002;
+    border-radius: 30px;
+    color:  #ffc002;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.slider3 > .card > a.button:hover{
+    background-color: #ffc002;
+    color: white;
+}
+/*fim Slider de produtos 3 (temos varios, pois o script para navegar é por id e classes específicas ) */
+/*Slider de produtos 4 (temos varios, pois o script para navegar é por id e classes específicas ) */
+.slider4{
+    display: flex;
+}
+
+.slider4 > .card{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imagens/fundoBody.avif);
+    background-size: 335%;
+}
+
+.slider4 > .card > .like{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.slider4 > .card > .like:hover{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.slider4 > .card > img.product{
+    width: 100%;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.slider4 > .card > .title{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+    height: 40px;
+}
+
+.slider4 > .card > .rating{
+    color: #ffc002;
+}
+
+.slider4 > .card > .price{
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #ffff00;
+}
+
+.slider4 > .card > a.button{
+    border: 1px solid #ffc002;
+    border-radius: 30px;
+    color:  #ffc002;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.slider4 > .card > a.button:hover{
+    background-color: #ffc002;
+    color: white;
+}
+/*fim Slider de produtos 4 (temos varios, pois o script para navegar é por id e classes específicas ) */
+/*Slider de produtos 4 (temos varios, pois o script para navegar é por id e classes específicas ) */
+.slider5{
+    display: flex;
+}
+
+.slider5>.card{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgb(0,0,0,0.75);
+    width: 100%;
+    max-width: 305px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Imagens/fundoBody.avif);
+    background-size: 335%;
+}
+
+.slider5 > .card > .like{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png);
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.slider5 > .card > .like:hover{
+    background-image: url(https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png);
+}
+
+.slider5 > .card > img.product{
+    width: 100%;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.slider5 > .card > .title{
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+    height: 40px;
+}
+
+.slider5 > .card > .rating{
+    color: #ffc002;
+}
+
+.slider5 > .card > .price{
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #ffff00;
+}
+
+.slider5 > .card > a.button{
+    border: 1px solid #ffc002;
+    border-radius: 30px;
+    color:  #ffc002;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-decoration: none;
+}
+
+.slider5 > .card > a.button:hover{
+    background-color: #ffc002;
+    color: white;
+}
+/*fim Slider de produtos 5 (temos varios, pois o script para navegar é por id e classes específicas ) */
+/*footer*/
+.footer-logo{
+    width: 50px;
+    margin-right: 20px;
+}
+.container{
+    max-width: 1000px;
+}
+.redes-sociais{
+    display: flex;
+}
+.redes-sociais>li{
+    font-size: 25px;
+}
+.redes-sociais>li>i:hover{
+    color: red;
+}
+
+@media(max-width: 800px){
+    h2{
+        right: 400px;
+        width: 50%;
+    }
+
+    .btn-group{
+        margin-left: 80px;
+    }
+
+    .provisorio{
+        display: none;
+    }
+
+    .container{
+        padding: 50px;
+    }
+
+    .box-slider{
+        width: 336px;
+    }
+
+    #formPesquisar{
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    #menu>a>img{
+        margin-left: 80px;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .text-end{
+        position: relative;
+        right: 20px;
+    }
+
+    .folders{
+        width: 5%;
+    }
+
+}
